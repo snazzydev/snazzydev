@@ -2,64 +2,116 @@
 <html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139279663-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-139279663-1');
-    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700,800" rel="stylesheet">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/css/vendor/bootstrap/bootstrap-grid.min.css" />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- FullPage -->
+    <link rel='stylesheet' href='https://alvarotrigo.com/fullPage/jquery.fullPage.css'>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/styles-all-min.css" />
+    <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
     <title>SnazzyDev | Web Developer /</title>
 </head>
 
 <body>
 
-
-    <div class="heading-box">
-
-        <h1 class="primary-heading">
-            <span class="primary-heading--top">
-                I'm Working On It
-            </span>
-            <span class="primary-heading--sub">
-                In the meantime, feel free to contact me:
-            </span>
-        </h1>
-
-        <div class="social-box">
-            <a href="https://www.instagram.com/snazzy.dev/" class="social-box__link">
-                <i class="fab fa-instagram social-box__icon"></i>
-            </a>
-
-            <a href="https://www.linkedin.com/in/ninoslav-stankovic/" class="social-box__link">
-                <i class="fab fa-linkedin-in social-box__icon"></i>
-            </a>
-
-            <a href="mailto:stankovicnino@gmail.com" class="social-box__link">
-                <i class="fas fa-envelope-open-text social-box__icon"></i>
-            </a>
+    <header class="header">
+        <div class="logo-box" data-sal-duration="1200" data-sal="zoom-in" data-sal-delay="500" data-sal-easing="ease-out-bounce">
+            <img src="assets/img/snazzy-dev-logo.png" alt="Snazzy Dev Logo" class="logo-box__img">
+            <h3 class="logo-box__heading">snazzy.dev</h3>
         </div>
+    </header>
 
-    </div>
+    <main id="fullpage">
+
+        <!-- MAIN -->
+        <section class="section section-main">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 class="primary-heading">
+                            <span class="primary-heading--top" data-sal-duration="1200" data-sal="slide-right" data-sal-delay="400"
+                                data-sal-easing="ease-out-bounce">Hi,
+                                <br>
+                                I'm <span class="type"></span></span>
+                            <span class="primary-heading--bottom" data-sal-duration="1200" data-sal="slide-right" data-sal-delay="600"
+                                data-sal-easing="ease-out-bounce">web designer /
+                                <br>
+                                developer</span>
+                        </h1>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="img-comp" data-sal-duration="1200" data-sal="slide-left" data-sal-delay="500"
+                            data-sal-easing="ease-out-bounce">
+                            <img src="assets/img/hexagon-curved-1.svg" alt="Hexagon Shape" class="img-comp__img img-comp__img-p1">
+                            <img src="assets/img/hexagon-curved-1.svg" alt="Hexagon Shape" class="img-comp__img img-comp__img-p2">
+                            <img src="assets/img/hexagon-curved-1.svg" alt="Hexagon Shape" class="img-comp__img img-comp__img-p3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ABOUT -->
+        <!--   <section class="section" data-aos="fade-right">
+            <p>
+                ABOUT
+            </p>
+        </section>
+
+     
+        <section class="section">
+            <p data-sal-duration="1200" data-sal="slide-right" data-sal-delay="300" data-sal-easing="ease-out-bounce">
+                WORK
+            </p>
+        </section>
+
+        <section class="section">
+            <p>
+                CONTACT
+            </p>
+        </section> -->
+
+    </main>
 
 
 
 
 
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src='https://alvarotrigo.com/fullPage/vendors/jquery.easings.min.js'></script>
+    <script src='https://alvarotrigo.com/fullPage/jquery.fullPage.min.js'></script>
+    <script src="./node_modules/sal.js/dist/sal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script>
+        sal();
+
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+                css3: true
+            });
+        });
+
+        var options = {
+            strings: ["Nino.", "the snazzy.dev"],
+            startDelay: 300,
+            smartBackspace: true,
+            typeSpeed: 80,
+            backDelay: 1000,
+            loop: true
+        }
+
+        var typed = new Typed(".type", options);
+    </script>
 </body>
 
 </html>

@@ -14,72 +14,111 @@
     <link rel='stylesheet' href='https://alvarotrigo.com/fullPage/jquery.fullPage.css'>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/styles-all-min.css" />
-    <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
+    <!-- Sal JS -->
+    <link rel="stylesheet" href="assets/css/vendor/sal/sal.css">
+    <!-- Rellax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.9.1/rellax.js"></script>
+
     <title>SnazzyDev | Web Developer /</title>
 </head>
 
 <body>
 
-    <header class="header">
-        <div class="logo-box" data-sal-duration="1200" data-sal="zoom-in" data-sal-delay="500" data-sal-easing="ease-out-bounce">
+    <div class="overlay">
+        <div class="loader">
+            <svg viewBox="0 0 80 80" class="svg-loader">
+                <rect x="8" y="8" width="64" height="64"></rect>
+            </svg>
+        </div>
+    </div>
+
+
+    <div id="back-to-top"></div>
+
+    <section class="scrollify section-main" data-name="first">
+
+        <div class="logo-box rellax" data-rellax-speed="8">
             <img src="assets/img/snazzy-dev-logo.png" alt="Snazzy Dev Logo" class="logo-box__img">
             <h3 class="logo-box__heading">snazzy.dev</h3>
         </div>
-    </header>
 
-    <main id="fullpage">
 
-        <!-- MAIN -->
-        <section class="section section-main">
-
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1 class="primary-heading">
-                            <span class="primary-heading--top" data-sal-duration="1200" data-sal="slide-right" data-sal-delay="400"
-                                data-sal-easing="ease-out-bounce">Hi,
-                                <br>
-                                I'm <span class="type"></span></span>
-                            <span class="primary-heading--bottom" data-sal-duration="1200" data-sal="slide-right" data-sal-delay="600"
-                                data-sal-easing="ease-out-bounce">web designer /
-                                <br>
-                                developer</span>
-                        </h1>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="img-comp" data-sal-duration="1200" data-sal="slide-left" data-sal-delay="500"
-                            data-sal-easing="ease-out-bounce">
-                            <img src="assets/img/hexagon-curved-1.svg" alt="Hexagon Shape" class="img-comp__img img-comp__img-p1">
-                            <img src="assets/img/hexagon-curved-1.svg" alt="Hexagon Shape" class="img-comp__img img-comp__img-p2">
-                            <img src="assets/img/hexagon-curved-1.svg" alt="Hexagon Shape" class="img-comp__img img-comp__img-p3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 class="primary-heading headline" data-sal-duration="1200" data-sal="fade" data-sal-easing="ease-out-bounce"
+                        data-sal-delay="300">
+                        <span class="primary-heading--top">Hi, I'm Ninoslav<span class="typed-element"></span>,
+                        </span>
+                        <span class="primary-heading--bottom">web designer
+                            /
+                            <br>
+                            developer</span>
+                    </h1>
+                </div>
+                <div class="col-md-4">
+                    <div class="img-comp">
+                        <div class="img-comp__container">
+                            <img src="assets/img/hexagon-curved-1.svg" alt="Hexagon Shape" class="img-comp__img img-comp__img-p1 rellax"
+                                data-rellax-speed="1">
+                            <img src="assets/img/hexagon-curved-1.svg" alt="Hexagon Shape" class="img-comp__img img-comp__img-p2 rellax"
+                                data-rellax-speed="4">
+                            <img src="assets/img/hexagon-curved-1.svg" alt="Hexagon Shape" class="img-comp__img img-comp__img-p3 rellax"
+                                data-rellax-speed="7">
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="scroll-box rellax" data-rellax-speed="5">
+                <!-- <p class="scroll-box__text">let's go!</p> -->
+                <div class="scroll-box__arrow"></div>
+            </div>
+        </div>
 
-        </section>
+    </section>
 
-        <!-- ABOUT -->
-        <!--   <section class="section" data-aos="fade-right">
-            <p>
-                ABOUT
-            </p>
-        </section>
+    <!-- ABOUT -->
+    <section class="scrollify">
 
-     
-        <section class="section">
-            <p data-sal-duration="1200" data-sal="slide-right" data-sal-delay="300" data-sal-easing="ease-out-bounce">
-                WORK
-            </p>
-        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="primary-heading" data-sal-duration="1200" data-sal="fade" data-sal-easing="ease-out-bounce"
+                        data-sal-delay="300" data-rellax-speed="8">
+                        <span class="primary-heading--top">About Me<span class="typed-element"></span>
+                        </span>
+                        <span class="primary-heading--bottom primary-heading--bottom--1"></span>
+                    </h2>
 
-        <section class="section">
-            <p>
-                CONTACT
-            </p>
-        </section> -->
+                </div>
+                <div class="col-md-8">
+                    <div class="info-box" data-sal-duration="1200" data-sal="fade" data-sal-easing="ease-out-bounce" data-sal-delay="300">
+                        <img src="assets/img/ninoslav-stankovic.jpg" alt="Ninoslav Stankovic" class="info-box__img" data-rellax-speed="8">
+                        <p class="info-box__text"> I love design and technology. Combining them
+                            together is my zen space.
+                            Think about your toaster for a second. Someone had to spend a great deal of time thinking about how to make it
+                            look good while also making it work.
+                        </p>
+                    </div>
 
-    </main>
+                </div>
+            </div>
+            <div class="scroll-box">
+                <!-- <p class="scroll-box__text">let's go!</p> -->
+                <div class="scroll-box__arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="scrollify">
+        <h1 data-sal-duration="1200" data-sal="zoom-in" data-sal-delay="300" data-sal-easing="ease-out-bounce">Section 3</h1>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="scrollify">
+        <h1 data-sal-duration="1200" data-sal="zoom-in" data-sal-delay="300" data-sal-easing="ease-out-bounce">Section 4</h1>
+    </section>
 
 
 
@@ -87,30 +126,59 @@
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src='https://alvarotrigo.com/fullPage/vendors/jquery.easings.min.js'></script>
-    <script src='https://alvarotrigo.com/fullPage/jquery.fullPage.min.js'></script>
-    <script src="./node_modules/sal.js/dist/sal.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
-    <script>
-        sal();
+    <script src="assets/js/vendor/sal.js"></script>
 
-        $(document).ready(function () {
-            $('#fullpage').fullpage({
-                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-                css3: true
-            });
+    <script>
+        // TYPED.JS
+        // var typed = new Typed(".typed-element", {
+        //     // Waits 1000ms after typing "First"
+        //     strings: ["Ninoslav", "the snazzy.dev"],
+        //     typeSpeed: 60,
+        //     loop: true,
+        //     backDelay: 1500
+        // });
+
+        // SAL
+        sal({
+            once: false
         });
 
-        var options = {
-            strings: ["Nino.", "the snazzy.dev"],
-            startDelay: 300,
-            smartBackspace: true,
-            typeSpeed: 80,
-            backDelay: 1000,
-            loop: true
+        // LOADER
+        var overlay = document.querySelector('.overlay');
+        window.addEventListener('load', function () {
+            setTimeout(removeLoader, 100);
+        });
+
+        function removeLoader() {
+            overlay.style.visibility = 'hidden';
+            overlay.style.opacity = '0';
         }
 
-        var typed = new Typed(".type", options);
+        // RELLAX
+        var rellax = new Rellax('.rellax');
+
+        // SCROLLIFY
+        var $backToTop = $('#back-to-top');
+
+        $.scrollify({
+            section: '.scrollify',
+            // easing: "easeOutExpo",
+            touchScroll: true,
+            sectionName: 'name',
+            before: function (i, e) {
+                if (i === 0) {
+                    $backToTop.hide();
+                    return;
+                }
+                $backToTop.show();
+            }
+        });
+
+        $backToTop.click(function () {
+            $.scrollify.move("#first");
+        })
     </script>
 </body>
 

@@ -24,6 +24,10 @@
 
 <body>
 
+
+
+
+    <!-- OVERLAY -->
     <div class="overlay">
         <div class="loader">
             <svg viewBox="0 0 80 80" class="svg-loader">
@@ -33,9 +37,39 @@
     </div>
 
 
-    <div id="back-to-top"></div>
 
+    <div id="back-to-top">&nbsp;</div>
+
+
+    <!-- MAIN SECTION -->
     <section class="scrollify section-main" data-name="first">
+
+
+        <!-- NAVIGATION -->
+        <div class="menu">
+            <input type="checkbox" class="menu__checkbox" id="menu-toggle">
+
+            <label for="menu-toggle" class="menu__button">
+                <span class="menu__icon">&nbsp;</span>
+            </label>
+
+            <nav class="menu__nav">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">About</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Showcase</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
         <div class="logo-box rellax" data-rellax-speed="8">
             <img src="assets/img/snazzy-dev-logo.png" alt="Snazzy Dev Logo" class="logo-box__img">
@@ -77,7 +111,7 @@
 
     </section>
 
-    <!-- ABOUT -->
+    <!-- ABOUT SECTIOn -->
     <section class="scrollify">
 
         <div class="container">
@@ -112,12 +146,12 @@
         </div>
     </section>
 
-    <!-- WORK -->
+    <!-- WORK SECTION-->
     <section class="scrollify">
         <h1 data-sal-duration="1200" data-sal="zoom-in" data-sal-delay="300" data-sal-easing="ease-out-bounce">Section 3</h1>
     </section>
 
-    <!-- CONTACT -->
+    <!-- CONTACT SECTION-->
     <section class="scrollify">
         <h1 data-sal-duration="1200" data-sal="zoom-in" data-sal-delay="300" data-sal-easing="ease-out-bounce">Section 4</h1>
     </section>
@@ -129,19 +163,9 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js'></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <script src="assets/js/vendor/sal.js"></script>
 
     <script>
-        // TYPED.JS
-        // var typed = new Typed(".typed-element", {
-        //     // Waits 1000ms after typing "First"
-        //     strings: ["Ninoslav", "the snazzy.dev"],
-        //     typeSpeed: 60,
-        //     loop: true,
-        //     backDelay: 1500
-        // });
-
         // SAL
         sal({
             once: false
@@ -150,7 +174,7 @@
         // LOADER
         var overlay = document.querySelector('.overlay');
         window.addEventListener('load', function () {
-            setTimeout(removeLoader, 2000);
+            setTimeout(removeLoader, 100);
         });
 
         function removeLoader() {

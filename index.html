@@ -24,7 +24,7 @@
     <title>SnazzyDev | Web Developer /</title>
 </head>
 
-<body>
+<body id="body">
 
 
 
@@ -32,9 +32,10 @@
     <!-- OVERLAY -->
     <div class="overlay">
         <div class="loader">
-            <svg viewBox="0 0 80 80" class="svg-loader">
+            <!-- <svg viewBox="0 0 80 80" class="svg-loader">
                 <rect x="8" y="8" width="64" height="64"></rect>
-            </svg>
+            </svg> -->
+            &nbsp;
         </div>
     </div>
 
@@ -63,27 +64,36 @@
                     <img src="assets/img/snazzy-dev-logo.png" alt="Snazzy Dev Logo" class="logo-box__img">
                     <h3 class="logo-box__heading">snazzy.dev</h3>
                 </div>
+
+
             </div>
 
             <nav class="menu__nav">
                 <ul class="menu__list">
                     <li class="menu__item">
+                        <img src="assets/icons/home.svg" alt="Home Icon" class="menu__nav-icon">
                         <a href="#" class="menu__link">Home</a>
                     </li>
                     <li class="menu__item">
+                        <img src="assets/icons/information.svg" alt="Home Icon" class="menu__nav-icon">
                         <a href="#" class="menu__link">About</a>
                     </li>
                     <li class="menu__item">
+                        <img src="assets/icons/picture.svg" alt="Home Icon" class="menu__nav-icon">
                         <a href="#" class="menu__link">Showcase</a>
                     </li>
                     <li class="menu__item">
+                        <img src="assets/icons/copy.svg" alt="Home Icon" class="menu__nav-icon">
                         <a href="#" class="menu__link">Contact</a>
                     </li>
                     <li class="menu__item">
+                        <img src="assets/icons/shopping-cart.svg" alt="Home Icon" class="menu__nav-icon">
                         <a href="#" class="menu__link">Shop</a>
                     </li>
                 </ul>
             </nav>
+
+
         </div>
 
         <div class="logo-box rellax" data-rellax-speed="8">
@@ -97,7 +107,7 @@
                 <div class="col-md-8">
                     <h1 class="primary-heading headline" data-sal-duration="1200" data-sal="fade" data-sal-easing="ease-out-bounce"
                         data-sal-delay="300">
-                        <span class="primary-heading--top">Hi, I'm Ninoslav<span class="typed-element"></span>,
+                        <span class="primary-heading--top">Hello, I'm Nino<span class="typed-element"></span>,
                         </span>
                         <span class="primary-heading--bottom">web designer
                             /
@@ -109,16 +119,16 @@
                     <div class="img-comp">
                         <div class="img-comp__container">
                             <img src="assets/img/hexagon-curved-1.svg" alt="Hexagon Shape" class="img-comp__img img-comp__img-p1 rellax"
-                                data-rellax-speed="1">
+                                data-rellax-speed="2">
                             <img src="assets/img/hexagon-curved-1.svg" alt="Hexagon Shape" class="img-comp__img img-comp__img-p2 rellax"
                                 data-rellax-speed="4">
                             <img src="assets/img/hexagon-curved-1.svg" alt="Hexagon Shape" class="img-comp__img img-comp__img-p3 rellax"
-                                data-rellax-speed="7">
+                                data-rellax-speed="6">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="scroll-box rellax" data-rellax-speed="5">
+            <div class="scroll-box rellax" data-rellax-speed="8">
                 <!-- <p class="scroll-box__text">let's go!</p> -->
                 <div class="scroll-box__arrow"></div>
             </div>
@@ -139,6 +149,8 @@
                 </span>
                 <span class="primary-heading--bottom primary-heading--bottom--1"></span>
             </h2>
+
+
         </div>
 
         <div class="container">
@@ -165,6 +177,8 @@
                     <a href="#skills-panel" class="btn btn-clear" data-sal-duration="1200" data-sal="fade" data-sal-easing="ease-out-bounce"
                         data-sal-delay="700">Show me more</a>
 
+
+
                 </div>
             </div>
             <div class="scroll-box">
@@ -185,7 +199,6 @@
                         </span>
                         <span class="primary-heading--bottom primary-heading--bottom--1"></span>
                     </h2>
-
                 </div>
                 <div class="col-md-8">
 
@@ -196,7 +209,7 @@
     </section>
 
     <!-- CONTACT SECTION-->
-    <section class="scrollify">
+    <section class="scrollify section-contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -208,16 +221,39 @@
                     </h2>
 
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-6">
+                    <div class="contact">
+                        <div class="contact__profile">
+                            <img src="assets/img/snazzy-dev-logo.png" alt="Snazzy Dev Logo" class="contact__logo">
+                        </div>
 
+                        <div class="contact__details">
+                            <h3 class="contact__name">Ninoslav Stanković</h3>
+                            <a href="mailto:stankovicnino@gmail.com" class="contact__mail">stankovicnino@gmail.com</a>
+                        </div>
+
+                        <p class="contact__text">If you have any questions or inquries, feel free to contact me on any of the following
+                            platforms.</p>
+
+                        <div class="contact__social">
+                            <a href="https://www.linkedin.com/in/ninoslav-stankovic/" class="contact__link">
+                                <img src="assets/icons/linkedin.svg" alt="" class="contact__img">
+                            </a>
+
+                            <a href="https://www.instagram.com/snazzy.dev/" class="contact__link">
+                                <img src="assets/icons/instagram.svg" alt="" class="contact__img">
+                            </a>
+
+                            <a href="https://twitter.com/snazzydev" class="contact__link">
+                                <img src="assets/icons/twitter.svg" alt="" class="contact__img">
+                            </a>
+                        </div>
+                    </div>
                 </div>
-
             </div>
         </div>
+
     </section>
-
-
-
 
 
 
@@ -234,7 +270,7 @@
         // LOADER
         var overlay = document.querySelector('.overlay');
         window.addEventListener('load', function () {
-            setTimeout(removeLoader, 100);
+            setTimeout(removeLoader, 2000);
         });
 
         function removeLoader() {
@@ -265,6 +301,8 @@
         $backToTop.click(function () {
             $.scrollify.move("#first");
         })
+
+        // BODY SCROLL
     </script>
 </body>
 

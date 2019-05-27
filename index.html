@@ -7,18 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,400,700,800" rel="stylesheet">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/css/vendor/bootstrap/bootstrap-grid.min.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/styles-all-min.css" />
     <!-- Sal JS -->
     <link rel="stylesheet" href="assets/css/vendor/sal/sal.css">
-    <!-- Rellax -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.9.1/rellax.js"></script>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-
+    <!-- Rellax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.9.1/rellax.min.js"></script>
     <title>SnazzyDev | Web Developer & Designer/</title>
 </head>
 
@@ -32,12 +31,11 @@
     </div>
 
     <!-- NAVIGATION -->
-    <div class="menu" data-sal-duration="600" data-sal="fade" data-sal-easing="ease-out-bounce" data-sal-delay="600">
+    <div class="menu" data-sal-duration="600" data-sal="fade" data-sal-easing="ease-out-bounce" data-sal-delay="800">
         <nav class="menu__nav">
             <ul class="menu__list">
                 <li class="menu__item">
                     <a href="#" class="menu__link" id="homeBtn">
-
                         home
                     </a>
                 </li>
@@ -64,19 +62,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="hero u-margin-botom-6">
-                        <img src="assets/img/ninoslav-stankovic-profile.svg" class="hero__img" alt="Ninoslav Stankovic"
-                            data-sal-duration="600" data-sal="fade" data-sal-easing="ease-out-bounce" data-sal-delay="200">
-                        <div class="hero__bg" data-sal-duration="1200" data-sal="fade" data-sal-easing="ease-out-bounce"
-                            data-sal-delay="300">&nbsp;</div>
+
+                    <div class="hero rellax" data-rellax-speed="3">
+                        <div class="hero__element hero__element--1">&nbsp;</div>
+                        <div class="hero__element hero__element--2">&nbsp;</div>
+                        <div class="hero__element hero__element--3">&nbsp;</div>
                     </div>
+
+
                 </div>
                 <div class="col-md-6">
-                    <div class="heading-box heading-box--center">
-                        <h1 class="primary-heading u-margin-botom-4" data-sal-duration="1200" data-sal="fade"
-                            data-sal-easing="ease-out-bounce" data-sal-delay="400">
+                    <div class="heading-box heading-box--center rellax" data-rellax-speed="7">
+                        <h1 class="primary-heading u-margin-botom-4">
                             <span class="primary-heading--top">Hi, I'm Nino</span>
-                            <span class="primary-heading__border" data-sal-duration="1200" data-sal="zoom-in"
+                            <span class="primary-heading__border" data-sal-duration="600" data-sal="zoom-in"
                                 data-sal-delay="600">&nbsp;</span>
                             <span class="primary-heading--bottom">web designer / developer</span>
                         </h1>
@@ -96,11 +95,64 @@
         <!-- ABOUT -->
         <section class="section-about">
 
+            <div class="container">
+
+
+
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="chevron-wrapper">
+                            <svg class="chevron-down chevron-down--about">
+                                <use xlink:href="assets/icons/sprite.svg#icon-chevrons-down"></use>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="info rellax" data-rellax-speed="6">
+                            <div class="heading-box heading-box--left">
+                                <h2 class="primary-heading u-margin-botom-4">
+                                    <span class="primary-heading--top">About me</span>
+                                    <span class="primary-heading__border" data-sal-duration="600" data-sal="zoom-in"
+                                        data-sal-delay="600">&nbsp;</span>
+                                </h2>
+                            </div>
+                            <div class="icon-box">
+                                <div class="icon-box__shape">
+                                    <svg class="icon-box__icon">
+                                        <use xlink:href="assets/icons/sprite.svg#icon-info"></use>
+                                    </svg>
+                                </div>
+                                <div class="icon-box__shape icon-box__shape--1">
+                                    &nbsp;
+                                </div>
+                                <div class="icon-box__shape icon-box__shape--2">
+                                    &nbsp;
+                                </div>
+                            </div>
+
+                            <p class="info__text">
+                                My name is Nino and I'm a self-thaught web designer and developer.
+                                I live and breathe technology, and
+                                design is right up there too. Combining them together is my zen
+                                space. Think about your toaster for a second. Someone had to spend a great deal of time thinking about
+                                how
+                                to
+                                make it look good while also making it work.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
         </section>
 
         <!-- SHOWCASE -->
         <section class="section-showcase">
-
+            showcase section
         </section>
 
         <!-- CONTACT -->
@@ -109,27 +161,35 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 offset-md-2">
-                        <div class="contact">
+                    <div class="col-md-4">
 
-                            <div class="color-panel">
-                                <div class="color-panel--1">&nbsp;</div>
-                                <div class="color-panel--2">&nbsp;</div>
-                                <div class="color-panel--3">
-                                    <svg class="color-panel__icon">
-                                        <use xlink:href="assets/icons/sprite.svg#icon-send"></use>
+                        <div class="heading-box heading-box--left">
+                            <h2 class="primary-heading" data-sal-duration="600" data-sal="fade" data-sal-easing="ease-out-bounce"
+                                data-sal-delay="400">
+                                <span class="primary-heading--top">Let's Talk</span>
+                                <span class="primary-heading__border" data-sal-duration="600" data-sal="zoom-in"
+                                    data-sal-delay="600">&nbsp;</span>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="contact" data-sal-duration="300" data-sal="fade" data-sal-easing="ease-out-bounce" data-sal-delay="300">
+
+
+                            <div class="icon-box">
+                                <div class="icon-box__shape">
+                                    <svg class="icon-box__icon">
+                                        <use xlink:href="assets/icons/sprite.svg#icon-mail"></use>
                                     </svg>
+                                </div>
+                                <div class="icon-box__shape icon-box__shape--1">
+                                    &nbsp;
+                                </div>
+                                <div class="icon-box__shape icon-box__shape--2">
+                                    &nbsp;
                                 </div>
                             </div>
 
-                            <div class="heading-box heading-box--right">
-                                <h2 class="primary-heading u-margin-botom-4" data-sal-duration="1200" data-sal="fade"
-                                    data-sal-easing="ease-out-bounce" data-sal-delay="400">
-                                    <span class="primary-heading--top">Let's Talk</span>
-                                    <span class="primary-heading__border" data-sal-duration="1200" data-sal="zoom-in"
-                                        data-sal-delay="600">&nbsp;</span>
-                                </h2>
-                            </div>
 
                             <div class="contact__details">
                                 <h3 class="contact__name">
@@ -173,14 +233,17 @@
                         </div>
                     </div>
                 </div>
+
             </div>
 
-            <div class="copyright">
+            <div class="copyright" data-sal-duration="600" data-sal="fade" data-sal-easing="ease-out-bounce" data-sal-delay="300">
                 <p class="copyright__text">
                     Copyright 2019 &copy; snazzy.dev <br> Designed and built by Ninoslav Stankovic.</p>
             </div>
         </section>
 
+
+        <!-- Scroll To Top -->
 
 
     </main>
@@ -199,6 +262,9 @@
     <script src="assets/js/vendor/sal.js"></script>
     <script src="assets/js/main.js"></script>
 
+    <script>
+
+    </script>
 
     <script type="module">
         import jump from './node_modules/jump.js/dist/jump.module.js';
@@ -206,13 +272,14 @@
         const btn1 = document.getElementById('aboutBtn');
         const btn2 = document.getElementById('showcaseBtn');
         const btn3 = document.getElementById('contactBtn');
+        const btn4 = document.getElementById('topBtn');
         
         btn.addEventListener('click', () => {
             jump('.header');
         })
 
         btn1.addEventListener('click', () => {
-            jump('.section-about');
+            jump('.section-info');
         })
 
         btn2.addEventListener('click', () => {
@@ -221,6 +288,12 @@
 
         btn3.addEventListener('click', () => {
             jump('.section-contact');
+        })
+
+        btn4.addEventListener('click', () => {
+            jump('.header', {
+                duration: 500
+            });
         })
 
     </script>
@@ -245,7 +318,6 @@
         // RELLAX
         var rellax = new Rellax('.rellax');
 
-
         // HIDE MENU
         $(document).ready(function () {
 
@@ -267,7 +339,6 @@
                 }
                 c = currentScrollTop;
             });
-
         });
     </script>
 </body>
